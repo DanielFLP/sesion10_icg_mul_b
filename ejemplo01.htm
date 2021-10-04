@@ -1,0 +1,27 @@
+<canvas id='tablero'  width=1000 height = 1000></canvas>
+<script>
+
+	function cuadro(cd,colorBorde,colorRelleno,grosor){
+	ctx.beginPath();
+	ctx.strokeStyle = colorBorde;
+	ctx.fillStyle=colorRelleno;
+	ctx.lineWidth= grosor;
+	ctx.moveTo(cd[0],cd[1]);
+	ctx.lineTo(cd[2],cd[3]);
+	ctx.lineTo(cd[4],cd[5]);
+	ctx.lineTo(cd[6],cd[7]);
+	ctx.closePath();
+	ctx.stroke();
+	ctx.fill();
+
+}
+	var c = document.getElementById('tablero')
+	var ctx = c.getContext('2d')		
+	
+	var cuadro = [350,151,630,151,632,425,350,425];
+	
+	cuadro(cuadro,'blue','red'); //por nombre
+	cuandro([33,144,309,144,309,432,33,432],'red','rgba(34,177,76)')//por rgba
+	cuandro([687,148,939,148,687,428,939,428],'red','#000000')//por color seguro
+	
+</script>
