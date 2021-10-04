@@ -1,4 +1,4 @@
-<canvas id='tablero'  width=1000 height = 1000></canvas>
+<canvas id='tablero'  width=500 height = 450></canvas>
 <script>
 
 	function cuadro(cd,colorBorde,colorRelleno,grosor){
@@ -16,12 +16,12 @@
 
 }
 	var c = document.getElementById('tablero')
-	var ctx = c.getContext('2d')		
+	var ctx = c.getContext('2d')
 	
-	var cuadro = [350,151,630,151,632,425,350,425];
-	
-	cuadro(cuadro,'blue','red'); //por nombre
-	cuandro([33,144,309,144,309,432,33,432],'red','rgba(34,177,76)')//por rgba
+	var [azul] = ['rgba(68,114,196)'];
+	var cAzul =[350,151,630,151,632,425,350,425];
+	cuadro(cAzul, 'gray',azul);
+	cuadro([33,144,309,144,309,432,33,432],'red','green')//por rgba
 	cuandro([687,148,939,148,687,428,939,428],'red','#000000')//por color seguro
 	
 </script>
